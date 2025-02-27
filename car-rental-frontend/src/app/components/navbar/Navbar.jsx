@@ -35,7 +35,7 @@ const Navbar = () => {
                                 </div>
                             </div>
 
-                            <div className='md:hidden cursor-pointer border w-[48px] h-[48px] flex items-center justify-center rounded-xl'>
+                            <div className='md:hidden cursor-pointer border w-[48px] h-[48px] flex items-center justify-center rounded-xl' onClick={() => router.push('/filter')}>
                                 <SlidersHorizontal className='w-6 h-6 text-secondary-400' />
                             </div>
 
