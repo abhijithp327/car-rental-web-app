@@ -1,18 +1,27 @@
+"use client";
+
 import { Fuel, Heart, Users } from 'lucide-react';
 import { GiGearStick } from "react-icons/gi";
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import clsx from "clsx";
+import { useRouter } from 'next/navigation';
 
 const CarsCard = ({ data, mdWidth = "304px", mdHeight = "388px" }) => {
+
+
+    const router = useRouter();
+
+
     // console.log(data.name);
     return (
+
         <div
             className={clsx(
                 "bg-primary-0 w-full h-[242px] flex flex-col justify-between px-6 py-6 rounded-xl transition-transform duration-300 hover:scale-105",
                 `md:max-w-[${mdWidth}] md:h-[${mdHeight}]`
             )}
-        >
+            onClick={() => router.push(`/cars/${data.id}`)}>
 
             <div className='flex flex-col'>
                 <div className='flex items-center justify-between'>

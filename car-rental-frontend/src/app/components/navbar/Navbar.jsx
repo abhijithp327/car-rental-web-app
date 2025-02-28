@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div className='flex items-center justify-between w-full'>
                     <div className='flex flex-col md:flex-row gap-8 md:gap-[64px] md:items-center w-full'>
                         <div className='flex justify-between'>
-                            <img src="/images/logo.png" alt="logo" className='w-[108px] md:w-[148px] h-auto object-contain' />
+                            <img src="/images/logo.png" alt="logo" className='w-[108px] md:w-[148px] h-auto object-contain cursor-pointer' onClick={() => router.push('/')}></img>
                             <div className="flex md:hidden items-center justify-center w-7 h-7 rounded-full border bg-white cursor-pointer hover:bg-mainbg">
                                 <img src="/images/person01.png" alt="image" className='' />
                             </div>

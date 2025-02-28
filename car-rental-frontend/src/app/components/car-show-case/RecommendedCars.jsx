@@ -34,7 +34,7 @@ const RecommendedCars = () => {
                     </div>
 
                     <div className='mt-4 flex items-center justify-center'>
-                        <Button className="bg-primary-500 text-primary-0 px-4 py-[10px] shadow-md transition-all duration-300 ease-in-out 
+                        <Button className="bg-primary-500 text-primary-0 px-4 py-[18px] shadow-md transition-all duration-300 ease-in-out 
                    hover:scale-105 hover:shadow-lg animate-fade-in-up hover:bg-primary-700">Show more cars</Button>
                     </div>
 

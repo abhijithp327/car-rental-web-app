@@ -1,11 +1,19 @@
+"use client";
+
 import { Fuel, Heart, Users } from 'lucide-react';
 import { GiGearStick } from "react-icons/gi";
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { useRouter } from 'next/navigation';
 
 const SliderCarsCard = ({ data }) => {
+
+     const router = useRouter();
+
     return (
-        <div className="bg-primary-0 max-w-[240px] h-[286px] md:max-w-[304px] w-full md:h-[388px] flex flex-col justify-between px-6 py-6 rounded-md transition-transform duration-300 hover:scale-105">
+        <div className="bg-primary-0 max-w-[240px] h-[286px] md:max-w-[304px] w-full md:h-[388px] flex flex-col justify-between px-6 py-6 rounded-md transition-transform duration-300 hover:scale-105"
+        onClick={() => router.push(`/cars/${data.id}`)}
+        >
 
 
             <div className='flex flex-col'>

@@ -10,7 +10,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 const PopularCars = () => {
 
   const [emblaRef] = useEmblaCarousel({ loop: false, align: 'start', slidesToScroll: 1 });
-  const [desktopEmblaRef] = useEmblaCarousel({ loop: false          , align: 'start', slidesToScroll: 1 });
+  const [desktopEmblaRef] = useEmblaCarousel({ loop: false, align: 'start', slidesToScroll: 1 });
 
   const popularCars = [
     { id: 1, name: "Tesla Model S", type: "Electric", price: 100, discount_price: 80, petrol_capacity: "N/A", transition: "Automatic", seat_capacity: "5", image: "/images/car01.png" },
@@ -22,14 +22,14 @@ const PopularCars = () => {
     { id: 7, name: "Volkswagen Polo GT", type: "Hatchback", price: 85, discount_price: 70, petrol_capacity: "45L", transition: "Manual", seat_capacity: "5", image: "/images/car08.png" },
     { id: 8, name: "Hyundai Verna", type: "Sedan", price: 92, discount_price: 78, petrol_capacity: "45L", transition: "Automatic", seat_capacity: "5", image: "/images/car02.png" },
   ];
-  
+
 
   return (
     <section>
       <div className='container px-4 py-6'>
 
         <div className='flex flex-col gap-6'>
-          
+
           <div className='flex justify-between'>
             <h3 className='text-secondary-300 text-base font-semibold'>Popular Cars</h3>
             <Link href='/cars' className='text-primary-500 text-sm md:text-base font-bold'>View all</Link>
@@ -44,16 +44,14 @@ const PopularCars = () => {
             ))}
           </div> */}
           {/* with slider */}
-        {/* Desktop Slider */}
-        <div className="hidden md:block overflow-hidden" ref={desktopEmblaRef}>
-            <div className="flex gap-5">
-              {popularCars.map((car) => (
-             <div key={car.id} className="basis-[calc(25%-1rem)] shrink-0 min-w-0">
-                  <SliderCarsCard data={car} />
-                </div>
+          {/* Desktop View */}
+         
+            <div className="hidden md:grid grid-cols-4 gap-6">
+              {popularCars.slice(0, 4).map((car) => (
+                  <SliderCarsCard data={car} key={car.id} />
               ))}
             </div>
-          </div>
+       
 
           {/* Mobile View */}
           <div className="md:hidden overflow-hidden" ref={emblaRef}>
