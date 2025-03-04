@@ -60,7 +60,7 @@ const ProductDetails = () => {
             </div>
 
             {/* Details Section */}
-            <div className="bg-primary-0 max-w-[343px] h-full md:min-h-[468px] min-h-[345px] max-h-[345px] md:w-[600px] md:max-w-[50%] p-6 md:max-h-[468px] rounded-md">
+            <div className="bg-primary-0 w-full max-w-[356px] h-full md:min-h-[468px] min-h-[345px] max-h-[345px] md:w-[600px] md:max-w-[50%] p-6 md:max-h-[468px] rounded-md">
 
               <div className="flex flex-col gap-6 md:gap-12">
 
