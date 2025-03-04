@@ -10,7 +10,7 @@ const PaymentDetails = () => {
             <div className='container px-4 py-6'>
 
                 <div className='flex md:flex-row flex-col-reverse gap-8 items-center md:items-start'>
-
+                    {/* Billing Info forms */}
                     <div className='w-full flex justify-center md:w-2/3'>
                         <div className='bg-primary-0 w-full max-w-[327px] md:max-w-[852px] p-6 flex flex-col gap-5 rounded-lg'>
                             <div className='flex flex-col gap-1'>
@@ -46,7 +46,7 @@ const PaymentDetails = () => {
 
                         </div>
                     </div>
-
+                    {/* Car Info Card */}     
                     <div className='w-full flex justify-center md:w-1/3'>
                         <div className="bg-primary-0 w-full min-w-[327px] max-w-[327px] max-h-[428px] md:max-w-[492px] md:max-h-[560px] p-6 rounded-md">
 
@@ -54,8 +54,7 @@ const PaymentDetails = () => {
 
                                 <div className="flex flex-col gap-4">
                                     <div className="flex items-center justify-between">
-                                        <h3 className="text-secondary-500 text-lg-2 md:text-xl-2 font-bold">Nissan GT -R</h3>
-                                        <Heart className="md:w-6 md:h-6 text-[#ED3F3F] fill-[#ED3F3F] w-5 h-5 cursor-pointer " />
+                                        <h3 className="text-secondary-500 text-lg-2 md:text-lg-2 font-bold">Rental Summary</h3>
                                     </div>
 
                                     <div className="flex items-center gap-2">
