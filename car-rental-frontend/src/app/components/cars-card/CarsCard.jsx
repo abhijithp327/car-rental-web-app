@@ -20,8 +20,7 @@ const CarsCard = ({ data, mdWidth = "304px", mdHeight = "388px" }) => {
             className={clsx(
                 "bg-primary-0 w-full h-[242px] flex flex-col justify-between px-6 py-6 rounded-xl transition-transform duration-300 hover:scale-105",
                 `md:max-w-[${mdWidth}] md:h-[${mdHeight}]`
-            )}
-            onClick={() => router.push(`/cars/${data.id}`)}>
+            )}>
 
             <div className='flex flex-col'>
                 <div className='flex items-center justify-between'>
@@ -36,8 +35,8 @@ const CarsCard = ({ data, mdWidth = "304px", mdHeight = "388px" }) => {
                 <p className='text-secondary-300 text-xs font-medium md:text-sm md:font-bold'>{data.type}</p>
             </div>
 
-            <div className='flex md:flex-col items-center justify-between md:gap-5'>
-                <img src={data.image} className='max-w-[160px] md:max-w-[248px] w-full md:h-[100px] h-[64px] object-contain' alt="image" />
+            <div className='flex md:flex-col items-center justify-between md:gap-5' onClick={() => router.push(`/cars/${data.id}`)}>
+                <img src={data.image} className='max-w-[160px] md:max-w-[248px] w-full md:h-[100px] h-[64px] object-contain cursor-pointer' alt="image" />
 
                 <div className='flex flex-col md:flex-row md:justify-between md:w-full gap-2'>
 
